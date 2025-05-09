@@ -26,6 +26,14 @@ public class FoodServlet extends HttpServlet {
             out.println(".card img { width: 200px; height: 150px; }");
             out.println("</style>");
             out.println("</head><body>");
+out.println("<nav>\r\n"
+		+ "    <a href=\"\">Home</a>\r\n"
+		+ "    <a href=\"http://\">Registration</a>\r\n"
+		+ "    <a href=\"http://\">Login</a>\r\n"
+		+ "    <a href=\"http://\">Cart</a>\r\n"
+		+ "    <a href=\"/FoodDB/FoodServlet\">Menu</a>\r\n"
+		+ "    <a href=\"http://\">Profile</a>\r\n"
+		+ "</nav>");
             
             out.println("<h1>Our Menu</h1>");
             out.println("<form action='CartServlet' method='post'>");
